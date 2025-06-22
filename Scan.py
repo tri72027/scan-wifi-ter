@@ -20,19 +20,19 @@ from typing import Dict
 os.system('cls||clear')
 print("""\033[1;32m
 
-███████╗██████╗░███╗░░██╗░░░░░░░██╗░░░░░░░██╗██╗███████╗██╗
-██╔════╝██╔══██╗████╗░██║░░░░░░░██║░░██╗░░██║██║██╔════╝██║
-█████╗░░██████╔╝██╔██╗██║█████╗░╚██╗████╗██╔╝██║█████╗░░██║
-██╔══╝░░██╔══██╗██║╚████║╚════╝░░████╔═████║░██║██╔══╝░░██║
-██║░░░░░██║░░██║██║░╚███║░░░░░░░░╚██╔╝░╚██╔╝░██║██║░░░░░██║
-╚═╝░░░░░╚═╝░░╚═╝╚═╝░░╚══╝░░░░░░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝\033[1;36m2.0
+████████╗██████╗░██╗░░░░░░░██╗░░░░░░░██╗██╗███████╗██╗
+╚══██╔══╝██╔══██╗██║░░░░░░░██║░░██╗░░██║██║██╔════╝██║
+░░░██║░░░██████╔╝██║█████╗░╚██╗████╗██╔╝██║█████╗░░██║
+░░░██║░░░██╔══██╗██║╚════╝░░████╔═████║░██║██╔══╝░░██║
+░░░██║░░░██║░░██║██║░░░░░░░░╚██╔╝░╚██╔╝░██║██║░░░░░██║
+░░░╚═╝░░░╚═╝░░╚═╝░═╝░░░░░░░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░░░░╚═╝\033[1;36m2.0
 \033[1;36m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
- \033[1;37mOwner   :            FARHAN MUH TASIM
- \033[1;37mFacebook:            FARHAN MUH TASIM
- \033[1;37mGithub  :            gtajisan X me
- \033[1;37mWhatsapp:            +880130505723*
+ \033[1;37mOwner   :            Minh Tri
+ \033[1;37mFacebook:            Minh Tri Nguyen
+ \033[1;37mGithub  :            tri72027
+ \033[1;37Zalo:                 +84702427138
  \033[1;31mOne line Command:
-\033[1;31msudo python FARHAN-Shotx.py/FARHAN-Shotx.py-i wlan0 --iface-down -K
+\033[1;31msudo python Scan.py-i wlan0 --iface-down -K
 
  \033[1;31mFor Help : FB-AND-TELEGRAM
 
@@ -805,7 +805,7 @@ class Companion:
                 self.__second_half_bruteforce(bssid, f_half, s_half, delay)
             raise KeyboardInterrupt
         except KeyboardInterrupt:
-            print("\nAborting…\nStay With\nFARHAN-MUH-TASIM")
+            print("\nAborting…\nStay With\nMinh-Tri")
             filename = self.sessions_dir + '{}.run'.format(bssid.replace(':', '').upper())
             with open(filename, 'w') as file:
                 file.write(self.bruteforce.mask)
@@ -1049,7 +1049,7 @@ def die(msg):
 
 def usage():
     return """
-Gtajisan 0.0.2 (c) 2017 rofl0r, modded by FARHAN-MUH-TASIM
+Gtajisan 0.0.2 (c) 2017 rofl0r, modded by Minh-Tri
 
 %(prog)s <arguments>
 
@@ -1082,7 +1082,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser(
-        description='Gtajisan 0.0.2 (c) 2017 rofl0r, modded by FARHAN-MUH-TASIM',
+        description='modded by Minh-Tri',
         epilog='Example: %(prog)s -i wlan0 -b 00:90:4C:C1:AC:21 -K'
         )
 
@@ -1196,12 +1196,12 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             if args.loop:
                 if input("\n[?] Exit the script (otherwise continue to AP scan)? [N/y] ").lower() == 'y':
-                    print("Aborting…\nStay With\nFARHAN-MUH-TASIM")
+                    print("Aborting…\nStay With\nMinh-Tri")
                     break
                 else:
                     args.bssid = None
             else:
-                print("\nAborting…\nStay With\nFARHAN-MUH-TASIM")
+                print("\nAborting…\nStay With\nMinh-Tri")
                 break
 
     if args.iface_down:
