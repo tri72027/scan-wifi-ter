@@ -993,14 +993,14 @@ class WiFiScanner:
         for n, network in network_list_items:
             number = f'{n})'
             model = '{} {}'.format(network['Model'], network['Model number'])
-            essid = truncateStr(network['ESSID'], 25)
+            essid = truncateStr(network.get('ESSID', '[Hidden]'), 25)
             deviceName = truncateStr(network['Device name'], 27)
             line = '{:<4} {:<18} {:<25} {:<8} {:<4} {:<27} {:<}'.format(
-                number, network['BSSID'], essid,
+                number, network.get('BSSID', '[Hidden]'), essid,
                 network['Security type'], network['Level'],
                 deviceName, model
                 )
-            if (network['BSSID'], network['ESSID']) in self.stored:
+            if (network.get('BSSID', '[Hidden]'), network.get('ESSID', '[Hidden]')) in self.stored:
                 print(colored(line, color='yellow'))
             elif network['WPS locked']:
                 print(colored(line, color='red'))
